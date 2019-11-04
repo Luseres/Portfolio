@@ -4,11 +4,11 @@ This is the portfolio of Joshua van der Poll, a 2th year student of fullstack we
 
 
 # Latest changes:
-  +Added contact poge.
-  +Added more projects.
-  +Added better CSS loading.
-  +Added CV
-  +Improved header
+  +Added contact poge.<br>
+  +Added more projects.<br>
+  +Added better CSS loading.<br>
+  +Added CV.<br>
+  +Improved header.<br>
   -Removed service workers (Users saw the old website).
 
 
