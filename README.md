@@ -17,7 +17,7 @@ This portfolio uses open source projects to work properly:
 
 * [jQuery] - Project sorting.
 
-And of course Dillinger itself is open source with a [public repository][repos]
+And of course this is open source with a [public repository][repos]
  on GitHub.
 
 ### Security:
