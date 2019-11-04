@@ -1,0 +1,229 @@
+body {
+	background-color: #292A2E;
+}
+html {	
+	scroll-behavior: smooth;
+}
+
+.welcome {
+	background-image: url("/public/img/back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+.welcome .content {
+	background-color: rgba(41, 41, 41, .8);
+	height: 100%;
+}
+.welcome header {
+	position: fixed;
+	width: 100%;
+	padding: .75em;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr auto auto;
+	grid-template-columns: 1fr auto auto;
+	background-color: rgba(41, 42, 46, .8);
+  	-webkit-box-align: center;
+  	        align-items: center;
+  	z-index: 10;
+}
+.welcome header .logo {
+	width: 75px;
+	height: 75px;
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.welcome header .logo:hover {
+	-webkit-transform: rotate(10deg);
+	        transform: rotate(10deg);
+}
+.welcome header #header_text {
+	position: absolute;
+	left: -25px; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	font-family: Eurostile;
+	color: #FFF;
+	font-size: 2.5em;
+	font-weight: 700;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	padding-top: 0;
+}
+.welcome header button {
+	border: solid 1px #FFF;
+	background-color: transparent;
+	color: #FFF;
+	border-radius: 9999em;
+	font-size: 1.2em;
+	padding: .5em 1.5em;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+	margin-right: 1.5em;
+}
+.welcome header button:hover {
+	border: solid 1px #FFF;
+	color: #000;
+	background-color: #FFF;
+}
+.welcome h1 {
+	position: relative;
+	font-family: Eurostile;
+	color: #FFF;
+	font-size: 2.5em;
+	text-align: center;
+	padding-top: 28vh;
+	font-weight: 700;
+}
+.welcome h2 {
+	font-family: Eurostile;
+	color: #D94C48;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+.basic {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 40% 60%;
+	grid-template-columns: 40% 60%;
+	margin: 2em;
+}
+.basic .code p {
+	display: inline-block;
+	margin-top: .5em;
+	margin-left: 1em;
+	border-radius: 1000em;
+	border: solid 1px #FFF;
+	padding: 6px 12px;
+}
+.basic img {
+	width: 100%;
+	height: 20em;
+}
+.basic h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: .5em;
+	margin-left: 1em;
+}
+.basic p {
+	font-size: 1.3em;
+	margin-bottom: .5em;
+	line-height: 1.4em;
+	margin-left: 1em;
+}
+.basic button {
+	border: solid 1px #D94C48;
+	border-radius: 20px;
+	background-color: transparent;
+	font-size: 1.2em;
+	color: #D94C48;
+	padding: .5em 1.5em;
+	margin-top: 1em;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+	margin-left: 1em;
+}
+.basic button:hover {
+	border: solid 1px #D94C48;
+	background-color: #D94C48;
+	color: #FFF;
+}
+.work {
+	margin: 2em;
+	-ms-grid-columns: ()[1fr 1fr];
+	grid-template-columns: repeat(1fr 1fr);
+	text-align: center;
+}
+.work h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+.work img {
+	width: 48%;
+	height: 25em;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	margin: .5em;
+}
+
+.team {
+	margin: 2em;
+	text-align: center;
+}
+.team h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+.team .members {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto auto auto;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	margin: 5em;
+}
+.team .person {
+	width: 20em;
+	padding: 1.5em;
+}
+.team .members img {
+	width: 98%;
+	height: 25em;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	margin: .5em;
+	text-align: center;
+}
+.team h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.team p {
+	font-size: 1.3em;
+}
+.team a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+	.team .members {
+		-ms-grid-columns: auto auto;
+		grid-template-columns: auto auto;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.basic {
+		display: -ms-block;
+		display: block;
+		margin: 2em;
+	}
+	.work img {
+		width: 100%;
+	}
+	.team .members {
+		display: -ms-block;
+		display: block;
+	}
+	.team .person {
+		width: 100%;
+		padding: 1.5em;
+		margin-left: -2em;
+	}
+	.team .person img {
+		max-width: 20em;
+	}
+}
