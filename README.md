@@ -4,13 +4,9 @@ This is the portfolio of Joshua van der Poll, a 2th year student of fullstack we
 
 
 # Latest changes:
-  <b>+</b> Added contact poge.<br>
-  <b>+</b> Added more projects.<br>
-  <b>+</b> Added better CSS loading.<br>
-  <b>+</b> Added CV.<br>
-  <b>+</b> Improved header.<br>
-  <b>-</b> Removed service workers (Users saw the old website).
-
+  <b>+</b> Minify all code.<br>
+  <b>+</b> Minify css files.<br>
+  <b>+</b> Inline css function.<br>
 
 ### Tech:
 This portfolio uses open source projects to work properly:
@@ -37,9 +33,9 @@ We would love to hear what you've found that can be improved. You can contact me
 26770@ma-web.nl
 
 ### Todos
- - Add more project images.
- - Add multi language support.
- - Collect user analytics.
+ - Add more project images and text.
  - Lazy loading images.
+ - <del>Add multi language support.</del>
+ - <del>Collect user analytics.</del>
 
    [repos]: <https://github.com/Luseres/Portfolio>
