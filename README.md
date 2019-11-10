@@ -4,9 +4,7 @@ This is the portfolio of Joshua van der Poll, a 2th year student of fullstack we
 
 
 # Latest changes:
-  <b>+</b> Minify all code.<br>
-  <b>+</b> Minify css files.<br>
-  <b>+</b> Inline css function.<br>
+  <b>+</b> SEO Boosted.<br>
 
 ### Tech:
 This portfolio uses open source projects to work properly:
@@ -33,8 +31,8 @@ We would love to hear what you've found that can be improved. You can contact me
 26770@ma-web.nl
 
 ### Todos
- - Add more project images and text.
- - Lazy loading images.
+ - <del>Add more project images and text.</del>
+ - <del>Lazy loading images.</del>
  - <del>Add multi language support.</del>
  - <del>Collect user analytics.</del>
 
