@@ -1,354 +1,386 @@
-body {
-	background-color: #292A2E;
-}
-html {	
-	scroll-behavior: smooth;
-}
-
-.welcome {
-	background-image: url("/public/img/back.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	height: 100vh;
-}
-.welcome .content {
-	background-color: rgba(41, 41, 41, .8);
-	height: 100%;
-}
-.welcome header {
-	position: fixed;
-	width: 100%;
-	padding: .75em;
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr auto auto;
-	grid-template-columns: 1fr auto auto;
-	background-color: rgba(41, 42, 46, .8);
-  	-webkit-box-align: center;
-  	        align-items: center;
-  	z-index: 10;
-}
-.welcome header .logo {
-	width: 75px;
-	height: 75px;
-	-ms-grid-column: 1;
-	grid-column: 1;
-	-webkit-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
-}
-.welcome header .logo:hover {
-	-webkit-transform: rotate(10deg);
-	        transform: rotate(10deg);
-}
-.welcome header #header_text {
-	position: absolute;
-	left: -25px; 
-	right: 0; 
-	margin-left: auto; 
-	margin-right: auto; 
-	font-family: Eurostile;
-	color: #FFF;
-	font-size: 2.5em;
-	font-weight: 700;
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
-}
-
-.welcome header button {
-	border: solid 1px #FFF;
-	background-color: transparent;
-	color: #FFF;
-	border-radius: 9999em;
-	font-size: 1.2em;
-	padding: .5em 1.5em;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	cursor: pointer;
-	margin-right: 1.5em;
-}
-.welcome header button:hover {
-	border: solid 1px #FFF;
-	color: #000;
-	background-color: #FFF;
-}
-.welcome h1.title {
-	position: relative;
-	font-family: Eurostile;
-	color: #FFF;
-	font-size: 2.5em;
-	text-align: center;
-	padding-top: 28vh;
-	font-weight: 700;
-}
-.welcome h2 {
-	font-family: Eurostile;
-	color: #D94C48;
-	font-size: 2em;
-	text-align: center;
-}
-
-
-.about {
-	padding: 0 10%;
-	height: 100vh;
-}
-.about h2 {
-	color: #FFF;
-	font-size: 1.7em;
-	text-align: center;
-	margin: 1em;
-}
-.about .information {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-}
-.about .right {
-	margin-left: 2em;
-}
-.about img {
-	-o-object-fit: cover;
-	   object-fit: cover;
-	width: 100%;
-	height: 500px;
-}
-.about h3 {
-	font-size: 1.7em;
-	font-weight: bold;
-	margin-bottom: .7em;
-}
-.about p {
-	font-size: 1.3em;
-	line-height: 1.2;
-	width: 80%;
-}
-.about b {
-	color: #D94C48;
-}
-.about button {
-	border: solid 1px #D94C48;
-	border-radius: 20px;
-	background-color: transparent;
-	font-size: 1.2em;
-	color: #D94C48;
-	padding: .5em 1.5em;
-	margin-top: 1.3em;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	cursor: pointer;
-}
-.about button:hover {
-	border: solid 1px #D94C48;
-	background-color: #D94C48;
-	color: #FFF;
-}
-
-
-
-.skills {
-	padding: 0 10%;
-	height: 100vh;
-}
-.skills h2 {
-	color: #FFF;
-	font-size: 1.7em;
-	text-align: center;
-	margin: 1em;
-}
-.skills .container {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-.skills .skill {
-	background-color: #2D2E33;
-	margin: 1em 1em 2em 1em;
-	padding: 0 1em 1em 1em;
-	position: relative;
-	z-index: 5;
-}
-.skills .skill .skillimg {
-	position: absolute;
-	background-color: #D94C48;
-	border-radius: 99999em;
-	height: 80px;
-	width: 80px;
-	top: -33px;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-}
-.skills h3 {
-	text-align: center;
-	margin-top: 55px;
-	font-size: 1.6em;
-}
-.skills .sub {
-	text-align: center;
-	margin: .2em 0;
-}
-.skills .sub * {
-	display: inline-block;
-	vertical-align: middle;
-}
-.skills .sub img {
-	width: 1.5em;
-	height: 1.5em;
-}
-.skills .sub p {
-	color: #DEDEDE;
-	font-size: 1.3em;
-}
-
-
-
-.portfolio {
-	padding: 0 10%;
-	height: 100vh;
-}
-.portfolio h2 {
-	color: #FFF;
-	font-size: 1.7em;
-	text-align: center;
-	margin: 1em;
-}
-.portfolio .buttons {
-	text-align: center;
-	margin-bottom: 1em;
-}
-.portfolio button {
-	border: solid 1px #D94C48;
-	border-radius: 20px;
-	background-color: transparent;
-	font-size: 1.2em;
-	color: #D94C48;
-	padding: .5em 1.5em;
-	margin-top: 1.3em;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	margin: 0 .5em;
-	cursor: pointer;
-	margin-bottom: .5em;
-}
-.portfolio button:hover {
-	border: solid 1px #D94C48;
-	background-color: #D94C48;
-	color: #FFF;
-}
-.portfolio .projects {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-}
-.portfolio .project {
-	margin: 1em;
-	position: relative;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	height: 20em;
-	-webkit-animation: fadein 2s;
-	        animation: fadein 2s;
-}
-.portfolio .project img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-}
-.portfolio p {
-	position: absolute;
-	top: .5em;
-	left: .5em;
-	width: 100%;
-	font-size: 1.7em;
-	opacity: 0;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	cursor: pointer;
-	font-family: Eurostile;
-	text-align: center;
-	margin-top: 4.5em;
-}
-.portfolio .project .overlay {
-	background-color: transparent;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	cursor: pointer;
-}
-.portfolio .project .overlay:hover {
-	background-color: rgba(217, 76, 72, .35);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-}
-.portfolio .project:active {
-	-webkit-transform: scale(.97);
-	        transform: scale(.97);
-}
-.portfolio .project:hover .overlay {
-	background-color: rgba(217, 76, 72, .8);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-}
-.portfolio .project:hover p {
-	opacity: 1;
-}
-.portfolio .project .overlay:hover ~ p {
-	opacity: 1;
-}
-
-
-
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-color: #292a2e;
+}
+html body main .welcome {
+  background-image: url(/public/img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+html body main .welcome .content {
+  background-color: rgba(41, 41, 41, 0.8);
+  height: 100%;
+}
+html body main .welcome .content header {
+  position: fixed;
+  width: 100%;
+  padding: 0.75em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto;
+  background-color: rgba(41, 42, 46, 0.8);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10;
+}
+html body main .welcome .content header .logo {
+  width: 75px;
+  height: 75px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+html body main .welcome .content header .logo:hover {
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+html body main .welcome .content header #header_text {
+  position: absolute;
+  left: -25px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Eurostile;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+html body main .welcome .content header button {
+  border: solid 1px #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 9999em;
+  font-size: 1.2em;
+  padding: 0.69em 1.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-right: 1.5em;
+}
+html body main .welcome .content header button:hover {
+  border: solid 1px #fff;
+  color: #000;
+  background-color: #fff;
+}
+html body main .welcome .content h1 {
+  position: relative;
+  font-family: Eurostile;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 28vh;
+  font-weight: 700;
+}
+html body main .welcome .content h2 {
+  font-family: Eurostile;
+  color: #d94c48;
+  font-size: 2em;
+  text-align: center;
+}
+html body main .about {
+  padding: 3em 10%;
+}
+html body main .about h2 {
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+  margin: 1em;
+}
+html body main .about .information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+html body main .about .information .left img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+html body main .about .information .right {
+  margin-left: 2em;
+}
+html body main .about .information .right h3 {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+}
+html body main .about .information .right p {
+  font-size: 1.3em;
+  line-height: 1.2;
+  width: 80%;
+}
+html body main .about .information .right b {
+  color: #d94c48;
+}
+html body main .about .information .right button {
+  border: solid 1px #d94c48;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: #d94c48;
+  padding: 0.69em 1.5em;
+  margin-top: 1.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+html body main .about .information .right button:hover {
+  border: solid 1px #d94c48;
+  background-color: #d94c48;
+  color: #fff;
+}
+html body main .skills {
+  padding: 3em 10%;
+}
+html body main .skills h2 {
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+  margin: 1em;
+}
+html body main .skills .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+html body main .skills .container .skill {
+  background-color: #2d2e33;
+  margin: 1em 1em 2em 1em;
+  padding: 0 1em 1em 1em;
+  position: relative;
+  z-index: 5;
+}
+html body main .skills .container .skill .skillimg {
+  position: absolute;
+  background-color: #d94c48;
+  border-radius: 99999em;
+  height: 80px;
+  width: 80px;
+  top: -33px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+html body main .skills .container .skill h3 {
+  text-align: center;
+  margin-top: 55px;
+  font-size: 1.6em;
+}
+html body main .skills .container .skill .sub {
+  text-align: center;
+  margin: 0.2em 0;
+}
+html body main .skills .container .skill .sub * {
+  display: inline-block;
+  vertical-align: middle;
+}
+html body main .skills .container .skill .sub img {
+  width: 1.5em;
+  height: 1.5em;
+}
+html body main .skills .container .skill .sub p {
+  color: #dedede;
+  font-size: 1.3em;
+}
+html body main .portfolio {
+  padding: 3em 10%;
+}
+html body main .portfolio h2 {
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+  margin: 1em;
+}
+html body main .portfolio .buttons {
+  text-align: center;
+  margin-bottom: 1em;
+}
+html body main .portfolio .buttons button {
+  border: solid 1px #d94c48;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: #d94c48;
+  padding: 0.69em 1.5em;
+  margin-top: 1.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 0 0.5em;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+html body main .portfolio .buttons button:hover {
+  border: solid 1px #d94c48;
+  background-color: #d94c48;
+  color: #fff;
+}
+html body main .portfolio .projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+html body main .portfolio .projects .project {
+  margin: 1em auto;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 14.5em;
+  width: 80%;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+html body main .portfolio .projects .project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+html body main .portfolio .projects .project p {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 100%;
+  font-size: 1.7em;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-family: Eurostile;
+  text-align: center;
+  margin-top: 3.5em;
+}
+html body main .portfolio .projects .project .overlay {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+html body main .portfolio .projects .project .overlay:hover {
+  background-color: rgba(217, 76, 72, 0.35);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+html body main .portfolio .projects .project:active {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+}
+html body main .portfolio .projects .project:hover .overlay {
+  background-color: rgba(217, 76, 72, 0.8);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+html body main .portfolio .projects .project:hover p {
+  opacity: 1;
+}
+html body main .portfolio .projects .project .overlay:hover ~ p {
+  opacity: 1;
 }
 
-
+@media only screen and (min-width: 1600px) {
+  html body main .portfolio .projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media only screen and (max-width: 1125px) {
-	.skills .container {
-		-ms-grid-columns: 1fr 1fr;
-		grid-template-columns: 1fr 1fr;
-	}
+  html body main .skills .container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (max-width: 750px) {
-
-	.about, .skills, .portfolio {
-		height: auto;
-	}
-	.about .information {
-		-ms-grid-columns: 1fr;
-		grid-template-columns: 1fr;
-	}
-	.about img {
-		margin-bottom: 1em;
-	}
-	.skills .container {
-		-ms-grid-columns: 1fr;
-		grid-template-columns: 1fr;
-	}
-	.portfolio .projects {
-		-ms-grid-columns: 1fr;
-		grid-template-columns: 1fr;
-	}
-	.welcome header #header_text {
-		display: none;
-	}
+  html body main .about,
+html body main .portfolio,
+html body main .skills {
+    height: auto;
+  }
+  html body main .about .information {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  html body main .about .information .left img {
+    margin-bottom: 1em;
+  }
+  html body main .about .information .right {
+    margin: 0;
+  }
+  html body main .about .information .right button {
+    width: 100%;
+  }
+  html body main .about .information .right p {
+    width: 100%;
+  }
+  html body main .skills .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  html body main .portfolio .projects {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  html body main .portfolio .buttons button {
+    width: 100%;
+  }
+  html body main .welcome .content header {
+    -ms-grid-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto auto;
+  }
+  html body main .welcome .content header #header_text {
+    display: none;
+  }
+  html body main .welcome .content h1.title {
+    font-size: 2.2em;
+  }
+  html body main .welcome .content h2 {
+    font-size: 1.8em;
+  }
 }
