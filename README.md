@@ -19,7 +19,7 @@ Programming languages used in this project:
 
 Techniques used in this project:
 * [SASS]
-* [CSS/JS Minification]
+* [HTML, PHP, CSS, JS Minification]
 
 And of course this is open source with a [public repository][repos]
  on GitHub.
