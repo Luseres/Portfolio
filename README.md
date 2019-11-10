@@ -28,7 +28,7 @@ And of course this is open source with a [public repository][repos]
 ##### Found some issues?
 
 We would love to hear what you've found that can be improved. You can contact me at:
-26770@ma-web.nl
+joshua@jvdpoll.nl
 
 ### Todos
  - <del>Add more project images and text.</del>
