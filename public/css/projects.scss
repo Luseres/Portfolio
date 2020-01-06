@@ -1,0 +1,192 @@
+@import "variables";
+html {
+    body {
+        background-color: $backgroundColor;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        header {
+            height: 100vh;
+            background-image: url('https://i.imgur.com/dVxMfHf.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .overlay {
+                height: 100%;
+                background-color: rgba($color: $headerColor, $alpha: .65);
+                .header {
+                    padding: .5em 1em;
+                    background-color: $headerColor;
+                    display: grid;
+                    grid-template-columns: auto 1fr auto;
+                    @media screen and (max-width: $headerbreak) {
+                        grid-template-columns: 1fr auto;
+                    }
+                    * {
+                        display: inline-block;
+                    }
+                    .header__logo {
+                        width: 4em;
+                        height: 4em;
+                    }
+                    .header__title {
+                        text-align: center;
+                        font-size: 2em;
+                        padding: .5em 0;
+                        @media screen and (max-width: $headerbreak) {
+                            display: none;
+                        }
+                    }
+                    .header__button {
+                        background-color: $buttonColor;
+                        color: #FFF;
+                        border: solid 1px $buttonColor;
+                        transition: background-color ease .2s;
+                        cursor: pointer;
+                    }
+                    .header__button:hover {
+                        background-color: darken($buttonColor, 5%);
+                        border: solid 1px darken($buttonColor, 5%);
+                    }
+                    .header__button:active {
+                        background-color: darken($buttonColor, 10%);
+                        border: solid 1px darken($buttonColor, 10%);
+                    }
+                }
+                .title {
+                    color: #FFF;
+                    text-align: center;
+                    margin-top: 33vh;
+                    font-size: 2em;
+                }
+                .scrolldown {
+                    position: absolute;
+                    bottom: 5vh;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 7em;
+                    width: 6em;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
+        }
+        main {
+            padding: 0 10em;
+            margin-bottom: 2em;
+            @media screen and (max-width: $tablet) {
+                padding: 0 4em;
+            }
+            @media screen and (max-width: $phone) {
+                padding: 0 1em;
+            }
+            .functions {
+                .functions__search,
+                .functions__button {
+                    margin-right: .5em;
+                }
+                .functions__search {
+                    border: solid 1px $actionColor;
+                    color: $actionColor;
+                }
+                .functions__search::placeholder {
+                    color: $actionColor;
+                }
+                .functions__button {
+                    border: solid 1px $actionColor;
+                    color: $actionColor;
+                }
+                .functions--active {
+                    background-color: $actionColor;
+                    color: #FFF;
+                }
+                .functions__button:hover {
+                    border: solid 1px darken($buttonColor, 5%);
+                    color: darken($highlightColor, 5%);
+                }
+                .functions__button:active {
+                    border: solid 1px darken($buttonColor, 10%);
+                    color: darken($highlightColor, 10%);
+                }
+                .functions--active:hover {
+                    background-color: darken($actionColor, 5%);
+                    color: #FFF;
+                }
+                .functions--active:active {
+                    background-color: darken($actionColor, 10%);
+                    color: #FFF;
+                }
+            }
+            .projects {
+                .projects__list {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 2.5em;
+                    @media screen and (max-width: $phone) {
+                        grid-template-columns: 1fr;
+                    }
+                    .projects__project:hover {
+                        transform: scale(.95);
+                    }
+                    .projects__project:active {
+                        transform: scale(1);
+                    }
+                    .projects__project {
+                        cursor: pointer;
+                        margin-bottom: 1em;
+                        background-color: $itemColor;
+                        width: 100%;
+                        display: grid;
+                        grid-template-rows: auto 1fr;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                        transition: ease .2s transform;
+                        .projects__top {
+                            background-image: url('/public/images/gradient.png');
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            position: relative;
+                            height: 10em;
+                            border-radius: 10px 10px 0 0;
+                            .projects__image {
+                                position: absolute;
+                                top: 20px;
+                                margin: 0 auto;
+                                left: 0;
+                                right: 0;
+                                width: 69%;
+                                height: auto;
+                                min-height: 10em;
+                                max-height: 15em;
+                                background-color: #000;
+                                object-fit: contain;
+                                border-radius: 10px;
+                                box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                            }
+                        }
+                        .projects__bottom {
+                            margin-top: 20%;
+                            .projects__title {
+                                text-align: center;
+                                font-size: 1.6em;
+                                font-weight: 600;
+                                text-decoration: underline;
+                                line-height: 1.2em;
+                            }
+                            .projects__description {
+                                margin: 1em 4em;
+                                font-size: 1.2em;
+                                font-weight: 300;
+                                line-height: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,56 +1,38 @@
-<?php
-
-$css = "home";
-if ($_SERVER['REQUEST_URI'] !== '/') {
-    $css = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
-}
-
-function sanitize_output($buffer)
-{
-    $search = array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s');
-    $replace = array('>', '<', '\\1');
-    $buffer = preg_replace($search, $replace, $buffer);
-    return $buffer;
-}
-ob_start("sanitize_output");
-
-?>
 <!DOCTYPE html>
 <html lang='nl'>
 
 <head>
     <!-- Defaults -->
-    <title><?php echo $contents['header']['title'] ?></title>
+    <title>$title</title>
     <meta charset="utf-8" />
-    <meta name="description" content="<?php echo $contents['header']['description'] ?>">
-    <meta name="keywords" content="<?php echo $contents['header']['keywords'] ?>">
-    <meta name="author" content="Joshua van der Poll">
+    <meta name="description" content="$description">
+    <meta name="keywords" content="$keywords">
+    <meta name="author" content="$author">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#292A2E" />
     <meta name="robots" content="index, follow">
     <link rel='manifest' href='/manifest.json'>
     <!-- Open graph protocol -->
-    <meta property="og:title" content="<?php echo $contents['header']['title'] ?>" />
+    <meta property="og:title" content="$title" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://joshuavanderpoll.nl/public/images/foto.jpg" />
     <meta property="og:url" content="https://www.joshuavanderpoll.nl" />
-    <meta property="og:description" content="<?php echo $contents['header']['description'] ?>" />
-    <meta property="og:site_name" content="<?php echo $contents['header']['title'] ?>" />
+    <meta property="og:description" content="$description" />
+    <meta property="og:site_name" content="$title" />
     <!-- Social media data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="https://joshuavanderpoll.nl/public/images/foto.jpg">
-    <meta name="twitter:title" content="<?php echo $contents['header']['title'] ?>">
-    <meta name="twitter:description" content="<?php echo $contents['header']['description'] ?>">
+    <meta name="twitter:title" content="$title">
+    <meta name="twitter:description" content="$description">
     <meta name="twitter:site" content="https://www.joshuavanderpoll.nl/">
     <!-- Load external libraries -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151534947-1"></script>
     <!-- Generate CSS -->
     <?php
-    echo '<link rel="stylesheet" href="/public/css/css_selector.php?css=' . $css . '">';
+    echo '<link rel="stylesheet" href="/public/css/css_selector.php?css=home">';
     ?>
-
     <!-- Load theme colors -->
     <meta name='msapplication-TileColor' content='#292A2E'>
     <!-- Load icons -->

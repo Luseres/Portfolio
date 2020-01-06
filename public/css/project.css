@@ -1,261 +1,268 @@
-body {
-    background-color: #292a2e
+html body {
+  background-color: #131313;
 }
 
-html {
-    scroll-behavior: smooth
+html body img {
+  width: 100px;
+  height: 100px;
 }
 
-.welcome {
-    background-image: url(/public/img/back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh
+html body header {
+  height: 100vh;
+  background-image: url("https://i.imgur.com/dVxMfHf.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.welcome .content {
-    background-color: rgba(41, 41, 41, .8);
-    height: 100%
+html body header .overlay {
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.65);
 }
 
-.welcome header {
-    position: fixed;
+html body header .overlay .header {
+  padding: .5em 1em;
+  background-color: #202020;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+}
+
+@media screen and (max-width: 600px) {
+  html body header .overlay .header {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
+}
+
+html body header .overlay .header * {
+  display: inline-block;
+}
+
+html body header .overlay .header .header__logo {
+  width: 4em;
+  height: 4em;
+}
+
+html body header .overlay .header .header__title {
+  text-align: center;
+  font-size: 2em;
+  padding: .5em 0;
+}
+
+@media screen and (max-width: 600px) {
+  html body header .overlay .header .header__title {
+    display: none;
+  }
+}
+
+html body header .overlay .header .header__button {
+  background-color: #C43532;
+  color: #FFF;
+  border: solid 1px #C43532;
+  -webkit-transition: background-color ease .2s;
+  transition: background-color ease .2s;
+  cursor: pointer;
+}
+
+html body header .overlay .header .header__button:hover {
+  background-color: #b0302d;
+  border: solid 1px #b0302d;
+}
+
+html body header .overlay .header .header__button:active {
+  background-color: #9b2a28;
+  border: solid 1px #9b2a28;
+}
+
+html body header .overlay .title {
+  color: #FFF;
+  text-align: center;
+  margin-top: 33vh;
+  font-size: 2em;
+}
+
+html body header .overlay .subtitle {
+  color: #D23B39;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 400;
+}
+
+html body header .overlay .scrolldown {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 7em;
+  width: 6em;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+html body main {
+  padding: 0 5em;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main {
+    padding: 0 4em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html body main {
+    padding: 0 1em;
+  }
+}
+
+html body main .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  grid-gap: 1em;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .project {
+    display: block;
+  }
+}
+
+html body main .project .project__sidebar {
+  background-color: #1F1F1F;
+  width: calc(100% - 2em);
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 1em;
+}
+
+html body main .project .project__sidebar .project__general .project__external {
+  font-size: 1.5em;
+  margin-bottom: .3em;
+}
+
+html body main .project .project__sidebar .project__general .project__links .project__icon {
+  margin-right: .5em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+html body main .project .project__sidebar .project__general .project__links .project__icon .project__icon-image {
+  background-color: #E4443F;
+  padding: .3em;
+  border-radius: 9999em;
+}
+
+html body main .project .project__sidebar .project__general .project__links .project__icon .project__icon-image img {
+  height: 3em;
+  width: 3em;
+}
+
+html body main .project .project__sidebar .project__general .project__links .project__icon .project__icon-name {
+  text-align: center;
+  font-size: .85em;
+  margin-top: .5em;
+}
+
+html body main .project .project__sidebar .project__general .project__team {
+  font-size: 1.5em;
+  margin: 1em 0em .5em 0em;
+}
+
+html body main .project .project__sidebar .project__general .project__member {
+  cursor: pointer;
+  margin-bottom: .5em;
+  background-color: #262626;
+  padding: .5em .8em;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+html body main .project .project__sidebar .project__general .project__member .project__member-image {
+  margin-right: 1em;
+}
+
+html body main .project .project__sidebar .project__general .project__member .project__member-image .project__member-imagesource {
+  height: 3em;
+  width: 3em;
+  border-radius: 9999em;
+}
+
+html body main .project .project__sidebar .project__general .project__member .project__member-info {
+  margin-top: .5em;
+}
+
+html body main .project .project__sidebar .project__general .project__member .project__member-info .project__member-title {
+  font-weight: lighter;
+}
+
+html body main .project .project__sidebar .project__languages .project__usedlangs {
+  font-size: 1.5em;
+  margin-bottom: .3em;
+}
+
+html body main .project .project__sidebar .project__languages .project__language {
+  border-radius: 10px;
+  border: solid 1px #FFF;
+  padding: .5em 1em;
+  display: inline-block;
+  font-size: 1em;
+  margin: .2em;
+}
+
+html body main .project .project__info {
+  background-color: #1F1F1F;
+  width: calc(100% - 4em);
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: .5em 1.5em 2em 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .project .project__info {
+    width: calc(100% - 3em);
+  }
+}
+
+html body main .project .project__info .project__about-title,
+html body main .project .project__info .project__about-subtitle {
+  font-size: 1.5em;
+  margin: 1em 0em .5em 0em;
+}
+
+html body main .project .project__info .project__about-main,
+html body main .project .project__info .project__about-task {
+  font-size: 1.3em;
+  font-weight: lighter;
+  line-height: 1.3em;
+}
+
+html body main .project .project__info .project__about-preview {
+  width: auto;
+  height: 15em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 1em 0 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .project .project__info .project__about-preview {
     width: 100%;
-    padding: .75em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr auto auto;
-    grid-template-columns: 1fr auto auto;
-    background-color: rgba(41, 42, 46, .8);
-    -webkit-box-align: center;
-    align-items: center;
-    z-index: 10
+  }
 }
-
-.welcome header .logo {
-    width: 75px;
-    height: 75px;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out
-}
-
-.welcome header .logo:hover {
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg)
-}
-
-.welcome header #header_text {
-    position: absolute;
-    left: -25px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Eurostile;
-    color: #fff;
-    font-size: 2.5em;
-    font-weight: 700;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    padding-top: 0
-}
-
-.welcome header button {
-    border: solid 1px #fff;
-    background-color: transparent;
-    color: #fff;
-    border-radius: 9999em;
-    font-size: 1.2em;
-    padding: .5em 1.5em;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-    margin-right: 1.5em
-}
-
-.welcome header button:hover {
-    border: solid 1px #fff;
-    color: #000;
-    background-color: #fff
-}
-
-.welcome h1 {
-    position: relative;
-    font-family: Eurostile;
-    color: #fff;
-    font-size: 2.5em;
-    text-align: center;
-    padding-top: 28vh;
-    font-weight: 700
-}
-
-.welcome h2 {
-    font-family: Eurostile;
-    color: #d94c48;
-    font-size: 2em;
-    text-align: center
-}
-
-.basic {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 40% 60%;
-    grid-template-columns: 40% 60%;
-    margin: 2em
-}
-
-.basic .code p {
-    display: inline-block;
-    margin-top: .5em;
-    margin-left: 1em;
-    border-radius: 1000em;
-    border: solid 1px #fff;
-    padding: 6px 12px
-}
-
-.basic img {
-    width: 100%;
-    height: 20em
-}
-
-.basic h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: .5em;
-    margin-left: 1em
-}
-
-.basic p {
-    font-size: 1.3em;
-    margin-bottom: .5em;
-    line-height: 1.4em;
-    margin-left: 1em
-}
-
-.basic button {
-    border: solid 1px #d94c48;
-    border-radius: 20px;
-    background-color: transparent;
-    font-size: 1.2em;
-    color: #d94c48;
-    padding: .5em 1.5em;
-    margin-top: 1em;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-    margin-left: 1em
-}
-
-.basic button:hover {
-    border: solid 1px #d94c48;
-    background-color: #d94c48;
-    color: #fff
-}
-
-.work {
-    margin: 2em;
-    -ms-grid-columns: () [1fr 1fr];
-    grid-template-columns: repeat(1fr 1fr);
-    text-align: center
-}
-
-.work h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em
-}
-
-.work img {
-    width: 48%;
-    height: 25em;
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin: .5em
-}
-
-.team {
-    margin: 2em;
-    text-align: center
-}
-
-.team h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em
-}
-
-.team .members {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto auto auto;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    margin: 1em
-}
-
-.team .person {
-    width: 20em;
-    padding: 1.5em;
-    margin: 0 auto;
-}
-
-.team .members img {
-    width: 98%;
-    height: 25em;
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin: .5em;
-    text-align: center
-}
-
-.team h3 {
-    font-size: 1.5em;
-    font-weight: 700
-}
-
-.team p {
-    font-size: 1.3em
-}
-
-.team a {
-    text-decoration: none;
-    color: #fff
-}
-
-@media only screen and (max-width:1750px) {
-    .team .members {
-        -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-    }
-}
-
-@media only screen and (max-width:1300px) {
-    .team .members {
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto
-    }
-}
-
-@media only screen and (max-width:900px) {
-    .basic {
-        display: -ms-block;
-        display: block;
-        margin: 2em
-    }
-    .work img {
-        width: 100%
-    }
-    .team .members {
-        display: -ms-block;
-        display: block
-    }
-    .team .person {
-        width: 100%;
-        padding: 1.5em;
-        margin-left: -2em
-    }
-    .team .person img {
-        max-width: 20em
-    }
-}
+/*# sourceMappingURL=project.css.map */

@@ -1,0 +1,259 @@
+html body {
+  background-color: #131313;
+}
+
+html body img {
+  width: 100px;
+  height: 100px;
+}
+
+html body header {
+  height: 100vh;
+  background-image: url("https://i.imgur.com/dVxMfHf.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html body header .overlay {
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.65);
+}
+
+html body header .overlay .header {
+  padding: .5em 1em;
+  background-color: #202020;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+}
+
+@media screen and (max-width: 600px) {
+  html body header .overlay .header {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
+}
+
+html body header .overlay .header * {
+  display: inline-block;
+}
+
+html body header .overlay .header .header__logo {
+  width: 4em;
+  height: 4em;
+}
+
+html body header .overlay .header .header__title {
+  text-align: center;
+  font-size: 2em;
+  padding: .5em 0;
+}
+
+@media screen and (max-width: 600px) {
+  html body header .overlay .header .header__title {
+    display: none;
+  }
+}
+
+html body header .overlay .header .header__button {
+  background-color: #C43532;
+  color: #FFF;
+  border: solid 1px #C43532;
+  -webkit-transition: background-color ease .2s;
+  transition: background-color ease .2s;
+  cursor: pointer;
+}
+
+html body header .overlay .header .header__button:hover {
+  background-color: #b0302d;
+  border: solid 1px #b0302d;
+}
+
+html body header .overlay .header .header__button:active {
+  background-color: #9b2a28;
+  border: solid 1px #9b2a28;
+}
+
+html body header .overlay .title {
+  color: #FFF;
+  text-align: center;
+  margin-top: 33vh;
+  font-size: 2em;
+}
+
+html body header .overlay .scrolldown {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 7em;
+  width: 6em;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+html body main {
+  padding: 0 10em;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main {
+    padding: 0 4em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html body main {
+    padding: 0 1em;
+  }
+}
+
+html body main .functions .functions__search,
+html body main .functions .functions__button {
+  margin-right: .5em;
+}
+
+html body main .functions .functions__search {
+  border: solid 1px #B52D27;
+  color: #B52D27;
+}
+
+html body main .functions .functions__search::-webkit-input-placeholder {
+  color: #B52D27;
+}
+
+html body main .functions .functions__search:-ms-input-placeholder {
+  color: #B52D27;
+}
+
+html body main .functions .functions__search::-ms-input-placeholder {
+  color: #B52D27;
+}
+
+html body main .functions .functions__search::placeholder {
+  color: #B52D27;
+}
+
+html body main .functions .functions__button {
+  border: solid 1px #B52D27;
+  color: #B52D27;
+}
+
+html body main .functions .functions--active {
+  background-color: #B52D27;
+  color: #FFF;
+}
+
+html body main .functions .functions__button:hover {
+  border: solid 1px #b0302d;
+  color: #c52f2d;
+}
+
+html body main .functions .functions__button:active {
+  border: solid 1px #9b2a28;
+  color: #b02a28;
+}
+
+html body main .functions .functions--active:hover {
+  background-color: #a02822;
+  color: #FFF;
+}
+
+html body main .functions .functions--active:active {
+  background-color: #8b231e;
+  color: #FFF;
+}
+
+html body main .projects .projects__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5em;
+}
+
+@media screen and (max-width: 850px) {
+  html body main .projects .projects__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+html body main .projects .projects__list .projects__project:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+html body main .projects .projects__list .projects__project:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+html body main .projects .projects__list .projects__project {
+  cursor: pointer;
+  margin-bottom: 1em;
+  background-color: #1F1F1F;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: ease .2s transform;
+  transition: ease .2s transform;
+}
+
+html body main .projects .projects__list .projects__project .projects__top {
+  background-image: url("/public/images/gradient.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 10em;
+  border-radius: 10px 10px 0 0;
+}
+
+html body main .projects .projects__list .projects__project .projects__top .projects__image {
+  position: absolute;
+  top: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 69%;
+  height: auto;
+  min-height: 10em;
+  max-height: 15em;
+  background-color: #000;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+html body main .projects .projects__list .projects__project .projects__bottom {
+  margin-top: 20%;
+}
+
+html body main .projects .projects__list .projects__project .projects__bottom .projects__title {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-decoration: underline;
+  line-height: 1.2em;
+}
+
+html body main .projects .projects__list .projects__project .projects__bottom .projects__description {
+  margin: 1em 4em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+/*# sourceMappingURL=projects.css.map */

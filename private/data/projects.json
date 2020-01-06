@@ -1,0 +1,18 @@
+[{
+    "id": 0,
+    "name": "Epic",
+    "subtitle": "subtitle",
+    "information": "information",
+    "thumbnail": "thumbnail",
+    "task_information": "task_information",
+    "team": {
+        "1": {
+            "name": "name",
+            "portfolio": "portfolio",
+            "job": "job",
+            "image": "image"
+        }
+    },
+    "github": "https://github.com",
+    "live": "https://jvdpoll.nl"
+}]

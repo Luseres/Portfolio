@@ -1,0 +1,50 @@
+{
+    "english": {
+        "name": "Joshua van der Poll -",
+        "job": "Fullstack Media Developer",
+        "contact_button": "Contact me",
+        "about_title": "About",
+        "projects_title": "Projects",
+        "projects_placeholder": "Search certain project",
+        "about_text": "Hello! My name is<b> Joshua van der Poll</b>. I'm a full-stack media developer student at Mediacollege based in Amsterdam. Currently, I live in Velserbroek, A small town near Haarlem and Amsterdam. I see myself as a media developer that loves to learn new languages and always wants to improve my technics in web development. I know <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>PHP</b>, jQuery, and Java. I've also got a working knowledge of Sass and for example search engine optimization.  <br> <br>Currently, I 'm doing a level 4 Media Developer education at Mediacollege Amsterdam where I learn how to plan projects, work in teams and learn new technics for media development.<br><br> I've taken 3 small internships in 2017 like De Voorhoede, where I've learned how to code.Hike One, where I 've to learn to design websites and WPInADay located in Haarlem where I've worked with Wordpress websites.",
+        "cv_button": "View CV",
+        "github_button": "Visit Github",
+        "more_button": "Show more projects",
+        "cv_url": "/public/documents/CV_english.pdf",
+        "skills_title": "My Skills",
+        "project_about": "About this project:",
+        "project_usedcode": "Used coding languages:",
+        "project_task": "My task in this project:",
+        "404_title": "404 - Page not found",
+        "404_link": "Click here to return to home",
+        "header": {
+            "title": "Joshua van der Poll • Fullstack Developer",
+            "description": "My name is Joshua van der Poll. I'm a full-stack web developer in the region of Amsterdam. I'm currently studying web development at Media College.",
+            "keywords": "Joshua, Joshua van der Poll, Joshua vd Poll, Joshuavanderpoll, joshuavanderpoll, Joshuavdpoll, Front end Developer, Back end Developer, Full stack Developer, Media Developer, Developer, Fullstack, Full-Stack, Front-end, Back-end, websites, website, developer, front-end developer, back-end developer, full-stack developer, amsterdam, haarlem, north-holland, northholland"
+        }
+    },
+    "dutch": {
+        "name": "Joshua van der Poll -",
+        "job": "Fullstack Media Developer",
+        "contact_button": "Zoek contact",
+        "about_title": "Over mij",
+        "projects_title": "Projecten",
+        "projects_placeholder": "Zoek specifiek project",
+        "about_text": "Hallo! Mijn naam is <b>Joshua van der Poll</b>. Ik ben een fullstack media developer student op het Mediacollege in Amsterdam. Ik woon momenteel in Velserbroek, een dorp in de buurt en Haarlem en Amsterdam. Ik zie mij zelf aan als een media developer die draag nieuwe talen leert kennen en zich altijd wilt verbeteren in nieuwe technieken in mijn vak. Ik heb een kennis in het coderen in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>PHP</b>, jQuery en Java. Ook ben ik graag bezig met Sass en bijvoorbeeld search engine optimization.<br><br>Momenteel doe zit in het 2de jaar van een MBO niveau 4 opleiding Media Developer op het Mediacollege waar ik leer om projecten te plannen, samen te werken in teams en nieuwe technieken beoefenen op mijn vakgebied.<br><br>Ik heb kleine ervaring opgebouwd als het gaat over werkgevers in dit vakgebied. Ik heb 3 korte stages gelopen in 2017 waaronder de Voorhoede, waar ik heb geleerd te coderen. Hike One, waar ik geleerd heb om websites vorm te geven en nog een stage bij WPInADay in Haarlem waar ik met Wordpress websites heb gewerkt. ",
+        "cv_button": "Bekijk CV",
+        "github_button": "Bekijk Github",
+        "more_button": "Bekijk meer projecten",
+        "cv_url": "/public/documents/CV_dutch.pdf",
+        "skills_title": "Mijn Kennis",
+        "project_about": "Over dit project:",
+        "project_usedcode": "Gebruikte codeer talen:",
+        "project_task": "Mijn taak in dit project:",
+        "404_title": "404 - Pagina niet gevonden",
+        "404_link": "Klik hier om terug te gaan",
+        "header": {
+            "title": "Joshua van der Poll • Fullstack Developer",
+            "description": "Mijn naam is Joshua van der Poll. Ik ben een full-stack web developer in de omgeving van Amsterdam. Momenteel doe ik een studie web development op het Media College.",
+            "keywords": "Joshua, Joshua van der Poll, Joshua vd Poll, Joshuavanderpoll, joshuavanderpoll, Joshuavdpoll, Front end Developer, Back end Developer, Full stack Developer, Media Developer, Developer, Fullstack, Full-Stack, Front-end, Back-end, websites, website, developer, front-end developer, back-end developer, full-stack developer, amsterdam, haarlem, noord-holland, noordholland"
+        }
+    }
+}

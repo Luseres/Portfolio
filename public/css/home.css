@@ -1,386 +1,483 @@
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
 html body {
-  background-color: #292a2e;
+  background-color: #131313;
 }
-html body main .welcome {
-  background-image: url(/public/img/back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+
+html body img {
+  width: 100px;
+  height: 100px;
+}
+
+html body header {
   height: 100vh;
+  background-image: url("https://i.imgur.com/dVxMfHf.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-html body main .welcome .content {
-  background-color: rgba(41, 41, 41, 0.8);
+
+html body header .overlay {
   height: 100%;
+  background-color: rgba(32, 32, 32, 0.65);
 }
-html body main .welcome .content header {
-  position: fixed;
-  width: 100%;
-  padding: 0.75em;
+
+html body header .overlay .header {
+  padding: .5em 1em;
+  background-color: #202020;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto auto;
-  grid-template-columns: 1fr auto auto;
-  background-color: rgba(41, 42, 46, 0.8);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 10;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
 }
-html body main .welcome .content header .logo {
-  width: 75px;
-  height: 75px;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+
+@media screen and (max-width: 600px) {
+  html body header .overlay .header {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
 }
-html body main .welcome .content header .logo:hover {
-  -webkit-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  transform: rotate(10deg);
+
+html body header .overlay .header * {
+  display: inline-block;
 }
-html body main .welcome .content header #header_text {
+
+html body header .overlay .header .header__logo {
+  width: 4em;
+  height: 4em;
+}
+
+html body header .overlay .header .header__title {
+  text-align: center;
+  font-size: 2em;
+  padding: .5em 0;
+}
+
+@media screen and (max-width: 600px) {
+  html body header .overlay .header .header__title {
+    display: none;
+  }
+}
+
+html body header .overlay .header .header__button {
+  background-color: #C43532;
+  color: #FFF;
+  border: solid 1px #C43532;
+  -webkit-transition: background-color ease .2s;
+  transition: background-color ease .2s;
+  cursor: pointer;
+}
+
+html body header .overlay .header .header__button:hover {
+  background-color: #b0302d;
+  border: solid 1px #b0302d;
+}
+
+html body header .overlay .header .header__button:active {
+  background-color: #9b2a28;
+  border: solid 1px #9b2a28;
+}
+
+html body header .overlay .title {
+  color: #FFF;
+  text-align: center;
+  margin-top: 33vh;
+  font-size: 2em;
+}
+
+html body header .overlay .subtitle {
+  color: #D23B39;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 400;
+}
+
+html body header .overlay .scrolldown {
   position: absolute;
-  left: -25px;
+  bottom: 5vh;
+  left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  font-family: Eurostile;
-  color: #fff;
-  font-size: 2.5em;
-  font-weight: 700;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-html body main .welcome .content header button {
-  border: solid 1px #fff;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 9999em;
-  font-size: 1.2em;
-  padding: 0.69em 1.5em;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  margin-right: 1.5em;
-}
-html body main .welcome .content header button:hover {
-  border: solid 1px #fff;
-  color: #000;
-  background-color: #fff;
-}
-html body main .welcome .content h1 {
-  position: relative;
-  font-family: Eurostile;
-  color: #fff;
-  font-size: 2.5em;
-  text-align: center;
-  padding-top: 28vh;
-  font-weight: 700;
-}
-html body main .welcome .content h2 {
-  font-family: Eurostile;
-  color: #d94c48;
-  font-size: 2em;
-  text-align: center;
-}
-html body main .about {
-  padding: 3em 10%;
-}
-html body main .about h2 {
-  color: #fff;
-  font-size: 1.7em;
-  text-align: center;
-  margin: 1em;
-}
-html body main .about .information {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-html body main .about .information .left img {
+  height: 7em;
+  width: 6em;
   -o-object-fit: cover;
   object-fit: cover;
-  width: 100%;
-  height: 500px;
 }
-html body main .about .information .right {
-  margin-left: 2em;
+
+html body header .overlay .error-404 {
+  color: #FFF;
+  text-align: center;
+  margin-top: 33vh;
+  font-size: 2em;
 }
-html body main .about .information .right h3 {
-  font-size: 1.7em;
-  font-weight: 700;
-  margin-bottom: 0.7em;
+
+html body header .overlay .error-404-link {
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 1.6em;
+  text-decoration: underline;
 }
-html body main .about .information .right p {
-  font-size: 1.3em;
-  line-height: 1.2;
-  width: 80%;
+
+html body main {
+  padding: 0 10em;
 }
-html body main .about .information .right b {
-  color: #d94c48;
+
+@media screen and (max-width: 1200px) {
+  html body main {
+    padding: 0 4em;
+  }
 }
-html body main .about .information .right button {
-  border: solid 1px #d94c48;
-  border-radius: 20px;
-  background-color: transparent;
-  font-size: 1.2em;
-  color: #d94c48;
-  padding: 0.69em 1.5em;
-  margin-top: 1.3em;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+
+@media screen and (max-width: 850px) {
+  html body main {
+    padding: 0 1em;
+  }
+}
+
+html body main .about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .about {
+    display: block;
+  }
+}
+
+html body main .about h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 1em 0;
+}
+
+html body main .about .non-text {
+  padding-right: .5em;
+}
+
+html body main .about .non-text .non-text__image {
+  width: 26em;
+  height: 32em;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .about .non-text .non-text__image {
+    width: 100%;
+  }
+}
+
+html body main .about .non-text .buttons {
+  padding-top: 1em;
+}
+
+html body main .about .non-text .buttons .buttons__button {
+  background-color: inherit;
+  color: #D23B39;
+  border: solid 1px #C43532;
+  margin-right: 1em;
+  min-width: 8.5em;
+  -webkit-transition: background-color ease .2s;
+  transition: background-color ease .2s;
   cursor: pointer;
 }
-html body main .about .information .right button:hover {
-  border: solid 1px #d94c48;
-  background-color: #d94c48;
-  color: #fff;
+
+html body main .about .non-text .buttons .buttons__button:hover {
+  border: solid 1px #b0302d;
+  color: #c52f2d;
 }
-html body main .skills {
-  padding: 3em 10%;
+
+html body main .about .non-text .buttons .buttons__button:active {
+  border: solid 1px #9b2a28;
+  color: #b02a28;
 }
+
+html body main .about .non-text .buttons .button--action {
+  background-color: #C43532;
+  color: #FFF;
+  border: solid 1px #C43532;
+  -webkit-transition: ease background-color .2s;
+  transition: ease background-color .2s;
+}
+
+html body main .about .non-text .buttons .button--action:hover {
+  background-color: #b0302d;
+  border: solid 1px #b0302d;
+  color: #f2f2f2;
+}
+
+html body main .about .non-text .buttons .button--action:active {
+  background-color: #9b2a28;
+  border: solid 1px #9b2a28;
+  color: #e6e6e6;
+}
+
+html body main .about .non-text .media {
+  margin: .5em 0;
+}
+
+html body main .about .non-text .media .media__icon {
+  margin-right: .5em;
+  display: inline-block;
+  background-color: #1F1F1F;
+  border-radius: 9999px;
+  -webkit-transition: ease .2s transform;
+  transition: ease .2s transform;
+}
+
+html body main .about .non-text .media .media__icon img {
+  height: 2em;
+  width: 2em;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+html body main .about .non-text .media .media__icon:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+html body main .about .non-text .media .media__icon:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+html body main .about .text-info {
+  padding-left: .5em;
+}
+
+html body main .about .text-info .title {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+html body main .about .text-info .information {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+html body main .about .text-info .information b {
+  color: #D23B39;
+  font-weight: 400;
+}
+
 html body main .skills h2 {
-  color: #fff;
-  font-size: 1.7em;
   text-align: center;
-  margin: 1em;
+  font-size: 1.8em;
+  padding: 1em 0 2em 0;
 }
-html body main .skills .container {
+
+html body main .skills .skills__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5em;
 }
-html body main .skills .container .skill {
-  background-color: #2d2e33;
-  margin: 1em 1em 2em 1em;
-  padding: 0 1em 1em 1em;
+
+@media screen and (max-width: 1200px) {
+  html body main .skills .skills__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html body main .skills .skills__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+html body main .skills .skills__list .skills__skill:hover {
+  -webkit-transform: scale(0.975);
+          transform: scale(0.975);
+}
+
+html body main .skills .skills__list .skills__skill {
+  -webkit-transition: ease .2s transform;
+  transition: ease .2s transform;
+  margin-bottom: 1em;
+  background-color: #1F1F1F;
+  width: 100%;
   position: relative;
-  z-index: 5;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
-html body main .skills .container .skill .skillimg {
+
+html body main .skills .skills__list .skills__skill .skills__image {
+  width: 3.5em;
+  height: 3.5em;
+  padding: .4em;
+  border-radius: 9999px;
+  background-color: #E4443F;
   position: absolute;
-  background-color: #d94c48;
-  border-radius: 99999em;
-  height: 80px;
-  width: 80px;
   top: -33px;
   margin: 0 auto;
   left: 0;
   right: 0;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
-html body main .skills .container .skill h3 {
+
+html body main .skills .skills__list .skills__skill .skills__information {
+  padding-bottom: 2em;
+}
+
+html body main .skills .skills__list .skills__skill .skills__information .skills__type {
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.2em;
   text-align: center;
-  margin-top: 55px;
-  font-size: 1.6em;
+  margin-top: 50px;
 }
-html body main .skills .container .skill .sub {
+
+html body main .skills .skills__list .skills__skill .skills__information .skills__subinfo {
   text-align: center;
-  margin: 0.2em 0;
 }
-html body main .skills .container .skill .sub * {
+
+html body main .skills .skills__list .skills__skill .skills__information .skills__subinfo * {
   display: inline-block;
   vertical-align: middle;
 }
-html body main .skills .container .skill .sub img {
-  width: 1.5em;
-  height: 1.5em;
+
+html body main .skills .skills__list .skills__skill .skills__information .skills__subinfo .skills__checkmark {
+  height: 1.7em;
+  width: 1.7em;
+  padding-right: .4em;
 }
-html body main .skills .container .skill .sub p {
-  color: #dedede;
-  font-size: 1.3em;
-}
-html body main .portfolio {
-  padding: 3em 10%;
-}
-html body main .portfolio h2 {
-  color: #fff;
-  font-size: 1.7em;
-  text-align: center;
-  margin: 1em;
-}
-html body main .portfolio .buttons {
-  text-align: center;
-  margin-bottom: 1em;
-}
-html body main .portfolio .buttons button {
-  border: solid 1px #d94c48;
-  border-radius: 20px;
-  background-color: transparent;
+
+html body main .skills .skills__list .skills__skill .skills__information .skills__subinfo .skills__tech {
   font-size: 1.2em;
-  color: #d94c48;
-  padding: 0.69em 1.5em;
-  margin-top: 1.3em;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin: 0 0.5em;
+  font-weight: 300;
+}
+
+html body main .projects h2 {
+  text-align: center;
+  font-size: 1.8em;
+  padding: 1em 0;
+}
+
+html body main .projects a {
+  text-decoration: none;
+}
+
+html body main .projects a .projects__show-more {
+  background-color: inherit;
+  color: #D23B39;
+  border: solid 1px #C43532;
+  min-width: 8.5em;
+  display: block;
+  margin: 1em auto 2em auto;
+  -webkit-transition: ease .2s color;
+  transition: ease .2s color;
   cursor: pointer;
-  margin-bottom: 0.5em;
 }
-html body main .portfolio .buttons button:hover {
-  border: solid 1px #d94c48;
-  background-color: #d94c48;
-  color: #fff;
+
+html body main .projects a .projects__show-more:hover {
+  color: #c52f2d;
+  border: solid 1px #b0302d;
 }
-html body main .portfolio .projects {
+
+html body main .projects a .projects__show-more:active {
+  color: #b02a28;
+  border: solid 1px #9b2a28;
+}
+
+html body main .projects .projects__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-html body main .portfolio .projects .project {
-  margin: 1em auto;
-  position: relative;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  height: 14.5em;
-  width: 80%;
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
-}
-html body main .portfolio .projects .project img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-html body main .portfolio .projects .project p {
-  position: absolute;
-  top: 0.5em;
-  left: 0.5em;
-  width: 100%;
-  font-size: 1.7em;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  font-family: Eurostile;
-  text-align: center;
-  margin-top: 3.5em;
-}
-html body main .portfolio .projects .project .overlay {
-  background-color: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-html body main .portfolio .projects .project .overlay:hover {
-  background-color: rgba(217, 76, 72, 0.35);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-html body main .portfolio .projects .project:active {
-  -webkit-transform: scale(0.97);
-  -ms-transform: scale(0.97);
-  transform: scale(0.97);
-}
-html body main .portfolio .projects .project:hover .overlay {
-  background-color: rgba(217, 76, 72, 0.8);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-html body main .portfolio .projects .project:hover p {
-  opacity: 1;
-}
-html body main .portfolio .projects .project .overlay:hover ~ p {
-  opacity: 1;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5em;
 }
 
-@media only screen and (min-width: 1600px) {
-  html body main .portfolio .projects {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+@media screen and (max-width: 850px) {
+  html body main .projects .projects__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 1125px) {
-  html body main .skills .container {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
+
+html body main .projects .projects__list .projects__project:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
-@media only screen and (max-width: 750px) {
-  html body main .about,
-html body main .portfolio,
-html body main .skills {
-    height: auto;
-  }
-  html body main .about .information {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-  html body main .about .information .left img {
-    margin-bottom: 1em;
-  }
-  html body main .about .information .right {
-    margin: 0;
-  }
-  html body main .about .information .right button {
-    width: 100%;
-  }
-  html body main .about .information .right p {
-    width: 100%;
-  }
-  html body main .skills .container {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-  html body main .portfolio .projects {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-  html body main .portfolio .buttons button {
-    width: 100%;
-  }
-  html body main .welcome .content header {
-    -ms-grid-columns: 1fr auto auto;
-    grid-template-columns: 1fr auto auto;
-  }
-  html body main .welcome .content header #header_text {
-    display: none;
-  }
-  html body main .welcome .content h1.title {
-    font-size: 2.2em;
-  }
-  html body main .welcome .content h2 {
-    font-size: 1.8em;
-  }
+
+html body main .projects .projects__list .projects__project:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
+
+html body main .projects .projects__list .projects__project {
+  margin-bottom: 1em;
+  background-color: #1F1F1F;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: ease .2s transform;
+  transition: ease .2s transform;
+}
+
+html body main .projects .projects__list .projects__project .projects__top {
+  background-image: url("/public/images/gradient.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 10em;
+  border-radius: 10px 10px 0 0;
+}
+
+html body main .projects .projects__list .projects__project .projects__top .projects__image {
+  position: absolute;
+  top: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 69%;
+  height: auto;
+  min-height: 10em;
+  max-height: 15em;
+  background-color: #000;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+html body main .projects .projects__list .projects__project .projects__bottom {
+  margin-top: 20%;
+}
+
+html body main .projects .projects__list .projects__project .projects__bottom .projects__title {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-decoration: underline;
+  line-height: 1.2em;
+}
+
+html body main .projects .projects__list .projects__project .projects__bottom .projects__description {
+  margin: 1em 4em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+/*# sourceMappingURL=home.css.map */

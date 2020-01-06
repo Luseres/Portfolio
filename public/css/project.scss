@@ -1,0 +1,213 @@
+@import "variables";
+html {
+    body {
+        background-color: $backgroundColor;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        header {
+            height: 100vh;
+            background-image: url('https://i.imgur.com/dVxMfHf.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .overlay {
+                height: 100%;
+                background-color: rgba($color: $headerColor, $alpha: .65);
+                .header {
+                    padding: .5em 1em;
+                    background-color: $headerColor;
+                    display: grid;
+                    grid-template-columns: auto 1fr auto;
+                    @media screen and (max-width: $headerbreak) {
+                        grid-template-columns: 1fr auto;
+                    }
+                    * {
+                        display: inline-block;
+                    }
+                    .header__logo {
+                        width: 4em;
+                        height: 4em;
+                    }
+                    .header__title {
+                        text-align: center;
+                        font-size: 2em;
+                        padding: .5em 0;
+                        @media screen and (max-width: $headerbreak) {
+                            display: none;
+                        }
+                    }
+                    .header__button {
+                        background-color: $buttonColor;
+                        color: #FFF;
+                        border: solid 1px $buttonColor;
+                        transition: background-color ease .2s;
+                        cursor: pointer;
+                    }
+                    .header__button:hover {
+                        background-color: darken($buttonColor, 5%);
+                        border: solid 1px darken($buttonColor, 5%);
+                    }
+                    .header__button:active {
+                        background-color: darken($buttonColor, 10%);
+                        border: solid 1px darken($buttonColor, 10%);
+                    }
+                }
+                .title {
+                    color: #FFF;
+                    text-align: center;
+                    margin-top: 33vh;
+                    font-size: 2em;
+                }
+                .subtitle {
+                    color: $highlightColor;
+                    text-align: center;
+                    font-size: 1.9em;
+                    font-weight: 400;
+                }
+                .scrolldown {
+                    position: absolute;
+                    bottom: 5vh;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 7em;
+                    width: 6em;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
+        }
+        main {
+            padding: 0 5em;
+            margin-bottom: 2em;
+            @media screen and (max-width: $tablet) {
+                padding: 0 4em;
+            }
+            @media screen and (max-width: $phone) {
+                padding: 0 1em;
+            }
+            .project {
+                display: grid;
+                grid-template-columns: 25% 75%;
+                grid-gap: 1em;
+                margin-top: 2em;
+                @media screen and (max-width: $tablet) {
+                    display: block;
+                }
+                .project__sidebar {
+                    background-color: $itemColor;
+                    width: calc(100% - 2em);
+                    padding: 1em;
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    margin-bottom: 1em;
+                    .project__general {
+                        .project__external {
+                            font-size: 1.5em;
+                            margin-bottom: .3em;
+                        }
+                        .project__links {
+                            .project__icon {
+                                margin-right: .5em;
+                                cursor: pointer;
+                                display: inline-block;
+                                .project__icon-image {
+                                    background-color: $imageBackColor;
+                                    padding: .3em;
+                                    border-radius: 9999em;
+                                    img {
+                                        height: 3em;
+                                        width: 3em;
+                                    }
+                                }
+                                .project__icon-name {
+                                    text-align: center;
+                                    font-size: .85em;
+                                    margin-top: .5em;
+                                }
+                            }
+                        }
+                        .project__team {
+                            font-size: 1.5em;
+                            margin: 1em 0em .5em 0em;
+                        }
+                        .project__member {
+                            cursor: pointer;
+                            margin-bottom: .5em;
+                            background-color: $memberColor;
+                            padding: .5em .8em;
+                            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                            border-radius: 5px;
+                            display: grid;
+                            grid-template-columns: auto 1fr;
+                            .project__member-image {
+                                margin-right: 1em;
+                                .project__member-imagesource {
+                                    height: 3em;
+                                    width: 3em;
+                                    border-radius: 9999em;
+                                }
+                            }
+                            .project__member-info {
+                                margin-top: .5em;
+                                .project__member-title {
+                                    font-weight: lighter;
+                                }
+                            }
+                        }
+                    }
+                    .project__languages {
+                        .project__usedlangs {
+                            font-size: 1.5em;
+                            margin-bottom: .3em;
+                        }
+                        .project__language {
+                            border-radius: 10px;
+                            border: solid 1px #FFF;
+                            padding: .5em 1em;
+                            display: inline-block;
+                            font-size: 1em;
+                            margin: .2em;
+                        }
+                    }
+                }
+                .project__info {
+                    background-color: $itemColor;
+                    width: calc(100% - 4em);
+                    @media screen and (max-width: $tablet) {
+                        width: calc(100% - 3em);
+                    }
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 5px 0px rgba(0,
+                    0,
+                    0,
+                    0.75);
+                    padding: .5em 1.5em 2em 1.5em;
+                    .project__about-title,
+                    .project__about-subtitle {
+                        font-size: 1.5em;
+                        margin: 1em 0em .5em 0em;
+                    }
+                    .project__about-main,
+                    .project__about-task {
+                        font-size: 1.3em;
+                        font-weight: lighter;
+                        line-height: 1.3em;
+                    }
+                    .project__about-preview {
+                        width: auto;
+                        height: 15em;
+                        object-fit: contain;
+                        margin: 1em 0 0 0;
+                        @media screen and (max-width: $tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

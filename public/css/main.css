@@ -1,1 +1,41 @@
-body,html{max-width:100%}img{max-width:100%;-o-object-fit:contain;object-fit:contain;height:100px;width:100px}body{font-family:brandon-grotesque,sans-serif;font-weight:400;font-style:normal;color:#fff}textarea{resize:none}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Avenir', 'Lato', Arial, Helvetica sans-serif;
+    font-weight: 500;
+    color: #FFF;
+}
+
+button,
+input {
+    background-color: inherit;
+    color: inherit;
+    border: solid 1px inherit;
+    border-radius: 10px;
+    margin: .5em 0;
+    font-size: 1.2em;
+    padding: .55em 1.7em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lang_selector {
+    position: fixed;
+    left: 1em;
+    bottom: 1em;
+    z-index: 50;
+}
+
+.lang_selector img {
+    width: 2.5em;
+    height: 2em;
+    margin-right: .5em;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 55;
+}

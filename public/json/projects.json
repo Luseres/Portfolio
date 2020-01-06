@@ -1,0 +1,211 @@
+[{
+        "english": {
+            "description": "Young Visuals is a school project created by 6 people including me. My part in this project was the management, fixing page defaults and controlling the website's MVC structure (backend). 3 other students created the front end of the website and 2 4th year students from designing did the video and designs. The goal of this project was to create a company and impress the jury. If you win this competition you would get an external client for the year. Unfortunately, we became 4th place.",
+            "task": ""
+        },
+        "dutch": {
+            "description": "Young Visuals is a school project created by 6 people including me. My part in this project was the management, fixing page defaults and controlling the website's MVC structure (backend). 3 other students created the front end of the website and 2 4th year students from designing did the video and designs. The goal of this project was to create a company and impress the jury. If you win this competition you would get an external client for the year. Unfortunately, we became 4th place.",
+            "task": ""
+        },
+        "title": "Young Visuals",
+        "client": "Nederlandse Zaken",
+        "image": "youngvisuals.jpg",
+        "live_link": "https://young-visual.nl",
+        "git_link": "https://github.com/Luseres/YoungVisuals",
+        "tags": [
+            "backend",
+            "frontend"
+        ],
+        "code_langs": [
+            "HTML5",
+            "CSS3",
+            "jQuery",
+            "PHP"
+        ],
+        "team": [{
+            "name": "Joshua van der Poll",
+            "task": "CTO - Backend & Frontend",
+            "portfolio": "https://joshuavanderpoll.nl",
+            "image": "/public/images/foto.jpg"
+        }]
+    },
+    {
+        "english": {
+            "description": "Party voter is an individual project. The goal of this project is to create a website for party hosts so that they won't ask or get requests for what song to put on. The party voter app is a system using the YouTube API to request songs and upvote songs you would like to hear. When a number finishes the next most upvoted song will play on the hosts' app, connected for example to a BlueTooth speaker.",
+            "task": ""
+        },
+        "dutch": {
+            "description": "Party voter is een individueel project. De goal van dit project is om een app te maken zodat geen liedjes hoeft aan te vragen bij de feest eigenaar. Party voter is een app die gebruik maakt van het YouTube API om liedjes te kunnen aanvragen en om erop te stemmen zodat een lied het eerstvolgende liedje wordt. Als een nummer klaar is met afspelen begint het volgende lied waar het meest is op gestemd via de eigenaar zijn telefoon die bijvoorbeeld is verbonden met een Bluetooth speaker.",
+            "task": ""
+        },
+        "title": "Party Voter",
+        "client": "Individual",
+        "image": "partyvoter.jpg",
+        "live_link": "",
+        "git_link": "",
+        "tags": [
+            "backend",
+            "frontend",
+            "app"
+        ],
+        "code_langs": [
+            "HTML5",
+            "CSS3",
+            "REST API",
+            "JS",
+            "SQL",
+            "SaSS",
+            "PHP"
+        ],
+        "team": [{
+            "name": "Joshua van der Poll",
+            "task": "CEO & Fullstack Developer",
+            "portfolio": "https://joshuavanderpoll.nl",
+            "image": "/public/images/foto.jpg"
+        }]
+    },
+    {
+        "english": {
+            "description": "Marianae is a website where you can view cactus species and contact the owner if you would like to buy some seeds or plants. I'm working in a small team of me and my sister who's a designer. This project is currently being worked on but delayed due to school. ",
+            "task": ""
+        },
+        "dutch": {
+            "description": "Marianae is een website waar je cactussen soorten en zaden kan bekijken en contact opzoeken met de eigenaar voor eventueel verkoop. Ik werk in een klein team samen met mijn zus die een designer is. Dit project is momenteel in de wacht rij wegens school omstandigheden.",
+            "task": ""
+        },
+        "title": "Marianae",
+        "client": "Raymond van der Poll",
+        "image": "marianae.jpg",
+        "live_link": "",
+        "git_link": "",
+        "tags": [
+            "backend",
+            "frontend"
+        ],
+        "code_langs": [
+            "HTML5",
+            "CSS3",
+            "SaSS",
+            "JS",
+            "PHP",
+            "SQL",
+            "jQuery",
+            "JSON"
+        ],
+        "team": [{
+                "name": "Joshua van der Poll",
+                "task": "Fullstack Developer",
+                "portfolio": "https://joshuavanderpoll.nl",
+                "image": "/public/images/foto.jpg"
+            },
+            {
+                "name": "Sarah van der Poll",
+                "task": "Web design",
+                "portfolio": "http://sarahvanderpoll.nl",
+                "image": "http://sarahvanderpoll.nl/wp-content/uploads/2017/06/cropped-unitid-foto-1.jpg"
+            }
+        ]
+    },
+    {
+        "english": {
+            "description": "Social green was one of my favorite school projects. We got the job to create a website about climate change and nature. This project was made with a friend Jochem which portfolio page can be found below. We created a social media platform where you can create an account, post images with context and visit other accounts registered to the website. This was the first time I've used ajax for sending images to a database.",
+            "task": ""
+        },
+        "dutch": {
+            "description": "Social green is een van mijn favoriete schoolprojecten. We kregen de taak om een website te maken over klimaat en de natuur. Dit project is gemaakt door mij en een vriend Jochem waarvan zijn portfolio onder aan de pagina te vinden is. We hadden een sociaal media platform gemaakt waar je aan account kon aanmaken, afbeeldingen met context plaatsen en andere accounts bezoeken in ons systeem. Dit project was de eerste keer dat ik met AJAX bestanden had geüpload naar een database.",
+            "task": ""
+        },
+        "title": "Social Green",
+        "client": "Media College Amsterdam",
+        "image": "socialgreen.jpg",
+        "live_link": "",
+        "git_link": "",
+        "tags": [
+            "backend",
+            "frontend"
+        ],
+        "code_langs": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "jQuery",
+            "PHP",
+            "SQL"
+        ],
+        "team": [{
+                "name": "Joshua van der Poll",
+                "task": "Lead Fullstack Developer",
+                "portfolio": "https://joshuavanderpoll.nl",
+                "image": "/public/images/foto.jpg"
+            },
+            {
+                "name": "Jochem de Wit",
+                "task": "Fullstack Developer & Documentation",
+                "portfolio": "https://jochemdewit.nl",
+                "image": "https://jochemdewit.nl/uploads/profilepic.jpg"
+            }
+        ]
+    },
+    {
+        "english": {
+            "description": "In this project we got a task to create an advertisement banner that tracks how many views, clicks, and purchases were done. I created this banner by using an image banner with javascript that sends ajax requests to a PHP file. This PHP file will then analyze your data an put it in a database. The CMS system was made in HTML, CSS, and PHP to load the content from the database and display it.",
+            "task": ""
+        },
+        "dutch": {
+            "description": "In dit project hebben wij de opdracht gekregen om een advertentie afbeelding te maken dat bij houdt hoeveel mensen het hebben gezien, er op hebben geklikt en hoeveel mensen het betaal proces hebben uitgevoerd. Ik heb deze afbeelding gemaakt met javascript die een AJAX-aanvraag geeft aan een PHP bestand als er een actie wordt uitgevoerd. Het PHP-bestand verwerkt dan alle gegevens naar een database. Vanuit de control managementsysteem kan dan zien welke acties er zijn uitgevoerd.",
+            "task": ""
+        },
+        "title": "Portfolio CMS",
+        "client": "Media College Amsterdam",
+        "image": "portfoliocms.jpg",
+        "live_link": "https://web.archive.org/web/20190215161315im_/https://joshuavanderpoll.nl/content/projects/banner_tracking/icon.png",
+        "git_link": "",
+        "tags": [
+            "frontend",
+            "backend"
+        ],
+        "code_langs": [
+            "HTML5",
+            "CSS3",
+            "PHP"
+        ],
+        "team": [{
+            "name": "Joshua van der Poll",
+            "task": "Fullstack Developer",
+            "portfolio": "https://joshuavanderpoll.nl",
+            "image": "/public/images/foto.jpg"
+        }]
+    },
+    {
+        "english": {
+            "description": "The goal of this project was to create a webshop using PHP. This project was a final assignment for our backend class. I got this project 3 weeks before it was even public to the other classmates due to my knowledge of backend programming. This project was made in 1 week which gave me a lot of spare time in school. The products and shopping carts were stored in an SQL database. Next time I would like to use cookies and classes instead of an SQL database for the shopping cart.",
+            "task": ""
+        },
+        "dutch": {
+            "description": "De goal van dit project was om een webshop te maken via PHP. Dit project was een eind opdracht voor ons backend lessen. Dit project kreeg ik 3 weken voor dat het project open stond en had deze af gemaakt in 1 week tijd waardoor ik veel vrije tijd had voor andere opdrachten. De producten en het winkelwagentje waren gekoppeld aan een SQL-database. De volgende keer zou ik graag PHP classes en cookies gebruiken in plaats van alles in een database zetten.",
+            "task": ""
+        },
+        "title": "Shirt Webshop",
+        "client": "Media College Amsterdam",
+        "image": "shirtwebshop.jpg",
+        "live_link": "",
+        "git_link": "",
+        "tags": [
+            "frontend",
+            "backend"
+        ],
+        "code_langs": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "SQL",
+            "PHP"
+        ],
+        "team": [{
+            "name": "Joshua van der Poll",
+            "task": "Fullstack Developer",
+            "portfolio": "https://joshuavanderpoll.nl",
+            "image": "/public/images/foto.jpg"
+        }]
+    }
+]
