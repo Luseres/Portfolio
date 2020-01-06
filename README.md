@@ -4,7 +4,7 @@ This is the portfolio of Joshua van der Poll, a 2th year student of fullstack we
 
 
 # Latest changes:
-  <b>+</b> SEO Boosted.<br>
+  <b>+</b> Added new website and MVC.<br>
 
 ### Tech:
 This portfolio uses open source projects to work properly:
@@ -31,9 +31,7 @@ We would love to hear what you've found that can be improved. You can contact me
 joshua@jvdpoll.nl
 
 ### Todos
- - <del>Add more project images and text.</del>
  - <del>Lazy loading images.</del>
- - <del>Add multi language support.</del>
  - <del>Collect user analytics.</del>
 
    [repos]: <https://github.com/Luseres/Portfolio>
