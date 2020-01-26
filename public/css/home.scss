@@ -44,6 +44,7 @@ html {
                         border: solid 1px $buttonColor;
                         transition: background-color ease .2s;
                         cursor: pointer;
+                        min-height: 48px;
                     }
                     .header__button:hover {
                         background-color: darken($buttonColor, 5%);
@@ -138,6 +139,7 @@ html {
                             min-width: 8.5em;
                             transition: background-color ease .2s;
                             cursor: pointer;
+                            min-height: 48px;
                         }
                         .buttons__button:hover {
                             border: solid 1px darken($buttonColor, 5%);
@@ -166,7 +168,13 @@ html {
                     }
                     .media {
                         margin: .5em 0;
+                        height: 48px;
                         .media__icon {
+                            a {
+                                display: block;
+                                height: 64px;
+                                width: 64px;
+                            }
                             margin-right: .5em;
                             display: inline-block;
                             background-color: $itemColor;
@@ -290,6 +298,7 @@ html {
                         margin: 1em auto 2em auto;
                         transition: ease .2s color;
                         cursor: pointer;
+                        min-height: 48px;
                     }
                     .projects__show-more:hover {
                         color: darken($highlightColor, 5%);

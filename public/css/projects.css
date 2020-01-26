@@ -64,6 +64,7 @@ html body header .overlay .header .header__button {
   -webkit-transition: background-color ease .2s;
   transition: background-color ease .2s;
   cursor: pointer;
+  min-height: 48px;
 }
 
 html body header .overlay .header .header__button:hover {

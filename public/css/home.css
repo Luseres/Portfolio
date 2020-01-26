@@ -64,6 +64,7 @@ html body header .overlay .header .header__button {
   -webkit-transition: background-color ease .2s;
   transition: background-color ease .2s;
   cursor: pointer;
+  min-height: 48px;
 }
 
 html body header .overlay .header .header__button:hover {
@@ -188,6 +189,7 @@ html body main .about .non-text .buttons .buttons__button {
   -webkit-transition: background-color ease .2s;
   transition: background-color ease .2s;
   cursor: pointer;
+  min-height: 48px;
 }
 
 html body main .about .non-text .buttons .buttons__button:hover {
@@ -222,6 +224,7 @@ html body main .about .non-text .buttons .button--action:active {
 
 html body main .about .non-text .media {
   margin: .5em 0;
+  height: 48px;
 }
 
 html body main .about .non-text .media .media__icon {
@@ -231,6 +234,12 @@ html body main .about .non-text .media .media__icon {
   border-radius: 9999px;
   -webkit-transition: ease .2s transform;
   transition: ease .2s transform;
+}
+
+html body main .about .non-text .media .media__icon a {
+  display: block;
+  height: 64px;
+  width: 64px;
 }
 
 html body main .about .non-text .media .media__icon img {
@@ -382,6 +391,7 @@ html body main .projects a .projects__show-more {
   -webkit-transition: ease .2s color;
   transition: ease .2s color;
   cursor: pointer;
+  min-height: 48px;
 }
 
 html body main .projects a .projects__show-more:hover {

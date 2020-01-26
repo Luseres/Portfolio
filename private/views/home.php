@@ -20,7 +20,7 @@ $randProjects = getRandomProjects(2);
         </div>
         <main>
             <section class="about">
-                <h2><?php echo $contents['about_title'] ?></h2>
+                <h2><?php echo $contents['about_title'] ?>:</h2>
                 <div class="non-text" id="contact-methods">
                     <img src="/public/images/foto.jpg" alt="Image of me" class="non-text__image">
                     <div class="buttons">
@@ -28,15 +28,9 @@ $randProjects = getRandomProjects(2);
                         <a href="<?php echo $contents['cv_url'] ?>" target="_blank"><button class="buttons__button button--action"><?php echo $contents['cv_button'] ?></button></a>
                     </div>
                     <div class="media">
-                        <a href="mailto:joshua@jvdpoll.nl" target="_blank">
-                            <div class="media__icon"><img src="/public/images/icons/email.png" alt="Email icon"></div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/joshuavdpoll" target="_blank">
-                            <div class="media__icon"><img src="/public/images/icons/linkedin.png" alt="Linkedin icon"></div>
-                        </a>
-                        <a href="https://wa.me/31637788390" target="_blank">
-                            <div class="media__icon"><img src="/public/images/icons/whatsapp.png" alt="Whatsapp icon"></div>
-                        </a>
+                        <div class="media__icon"><a href="mailto:&#106;&#111;&#115;&#104;&#117;&#97;&commat;&#106;&#118;&#100;&#112;&#111;&#108;&#108;&period;&#110;&#108;" target="_blank"><img src="/public/images/icons/email.png" alt="Email icon"></a></div>
+                        <div class="media__icon"><a href="https://www.linkedin.com/in/joshuavdpoll" target="_blank"><img src="/public/images/icons/linkedin.png" alt="Linkedin icon"> </a></div>
+                        <div class="media__icon"><a href="https://wa.me/31637788390" target="_blank"><img src="/public/images/icons/whatsapp.png" alt="Whatsapp icon"></a></div>
                     </div>
                 </div>
                 <div class="text-info">
@@ -104,7 +98,7 @@ $randProjects = getRandomProjects(2);
                     <div class="skills__skill">
                         <img class="skills__image" src="/public/images/skills/hardware.png" alt="Skill image">
                         <div class="skills__information">
-                            <h3 class="skills__type">Server Managment</h3>
+                            <h3 class="skills__type">Server Management</h3>
                             <div class="skills__subinfo">
                                 <img class="skills__checkmark" src="/public/images/skills/check.png" alt="Checkmark">
                                 <p class="skills__tech">Ubuntu, Debian</p>

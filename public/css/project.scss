@@ -44,6 +44,7 @@ html {
                         border: solid 1px $buttonColor;
                         transition: background-color ease .2s;
                         cursor: pointer;
+                        min-height: 48px;
                     }
                     .header__button:hover {
                         background-color: darken($buttonColor, 5%);

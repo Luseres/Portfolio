@@ -100,3 +100,12 @@ function redirect($url)
     $script = '<script type="text/javascript">window.location = "' . $url . '"</script>';
     echo $script;
 }
+function minifyCSS($css)
+{
+    $css = preg_replace('/\/\*((?!\*\/).)*\*\//', '', $css);
+    $css = preg_replace('/\s{2,}/', ' ', $css);
+    $css = preg_replace('/\s*([:;{}])\s*/', '$1', $css);
+    $css = preg_replace('/;}/', '}', $css);
+    $css = preg_replace("/\r|\n/", "", $css);
+    return $css;
+}

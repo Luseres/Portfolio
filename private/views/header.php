@@ -14,9 +14,30 @@ function sanitize_output($buffer)
 }
 ob_start("sanitize_output");
 
+$htmllang = "en";
+switch ($lang) {
+    case 'dutch':
+        $htmllang = "nl";
+        break;
+    default:
+        $htmllang = "en";
+        break;
+}
 ?>
+
 <!DOCTYPE html>
-<html lang='nl'>
+<!--[if lt IE 9]>
+    <html xml:lang="<?php echo $htmllang ?>" lang="<?php echo $htmllang ?>"
+        xmlns:fb="http://ogp.me/ns/fb#" class="no-js lt-ie9" lang="<?php echo $htmllang ?>">
+<![endif]-->
+<!--[if lt IE 10]>
+    <html xml:lang="<?php echo $htmllang ?>" lang="<?php echo $htmllang ?>"
+        xmlns:fb="http://ogp.me/ns/fb#" class="no-js lt-ie10" lang="<?php echo $htmllang ?>">
+<![endif]-->
+<!--[if (gte IE 9)]><!-->
+<html xml:lang="<?php echo $htmllang ?>" lang="<?php echo $htmllang ?>" xmlns:fb="http://ogp.me/ns/fb#" class="no-js" lang="<?php echo $htmllang ?>">
+<!--<![endif]-->
+
 
 <head>
     <!-- Defaults -->
@@ -100,6 +121,7 @@ ob_start("sanitize_output");
                 "https://www.facebook.com/Joshua-van-der-Poll-109904557120548/",
                 "https://www.linkedin.com/in/joshuavdpoll/",
                 "https://www.instagram.com/joshua_vdpoll/",
+                "https://twitter.com/Luseres_",
                 "https://www.youtube.com/channel/UCP05TkaljaRlHfhSzIUtGIw"
             ]
         }

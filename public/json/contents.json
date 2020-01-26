@@ -10,7 +10,7 @@
         "cv_button": "View CV",
         "github_button": "Visit Github",
         "more_button": "Show more projects",
-        "cv_url": "/public/documents/CV_english.pdf",
+        "cv_url": "/public/documents/CVenglish.pdf",
         "skills_title": "My Skills",
         "project_about": "About this project:",
         "project_usedcode": "Used coding languages:",
@@ -20,7 +20,7 @@
         "header": {
             "title": "Joshua van der Poll • Fullstack Developer",
             "description": "My name is Joshua van der Poll. I'm a full-stack web developer in the region of Amsterdam. I'm currently studying web development at Media College.",
-            "keywords": "Joshua, Joshua van der Poll, Joshua vd Poll, Joshuavanderpoll, joshuavanderpoll, Joshuavdpoll, Front end Developer, Back end Developer, Full stack Developer, Media Developer, Developer, Fullstack, Full-Stack, Front-end, Back-end, websites, website, developer, front-end developer, back-end developer, full-stack developer, amsterdam, haarlem, north-holland, northholland"
+            "keywords": "Joshua, Joshua van der Poll, Joshua vd Poll, Joshuavanderpoll, joshuavanderpoll, Joshuavdpoll, Front end Developer, Back end Developer, Full stack Developer, Media Developer, Developer, Fullstack, Full-Stack, Front-end, Back-end, websites, website, developer, front-end developer, back-end developer, full-stack developer, amsterdam, haarlem, north-holland, northholland, joshuavdpol, joshua van der pol, joshuavanderpol"
         }
     },
     "dutch": {
@@ -34,7 +34,7 @@
         "cv_button": "Bekijk CV",
         "github_button": "Bekijk Github",
         "more_button": "Bekijk meer projecten",
-        "cv_url": "/public/documents/CV_dutch.pdf",
+        "cv_url": "/public/documents/CVdutch.pdf",
         "skills_title": "Mijn Kennis",
         "project_about": "Over dit project:",
         "project_usedcode": "Gebruikte codeer talen:",
@@ -44,7 +44,7 @@
         "header": {
             "title": "Joshua van der Poll • Fullstack Developer",
             "description": "Mijn naam is Joshua van der Poll. Ik ben een full-stack web developer in de omgeving van Amsterdam. Momenteel doe ik een studie web development op het Media College.",
-            "keywords": "Joshua, Joshua van der Poll, Joshua vd Poll, Joshuavanderpoll, joshuavanderpoll, Joshuavdpoll, Front end Developer, Back end Developer, Full stack Developer, Media Developer, Developer, Fullstack, Full-Stack, Front-end, Back-end, websites, website, developer, front-end developer, back-end developer, full-stack developer, amsterdam, haarlem, noord-holland, noordholland"
+            "keywords": "Joshua, Joshua van der Poll, Joshua vd Poll, Joshuavanderpoll, joshuavanderpoll, Joshuavdpoll, Front end Developer, Back end Developer, Full stack Developer, Media Developer, Developer, Fullstack, Full-Stack, Front-end, Back-end, websites, website, developer, front-end developer, back-end developer, full-stack developer, amsterdam, haarlem, noord-holland, noordholland, joshuavdpol, joshua van der pol, joshuavanderpol"
         }
     }
 }
